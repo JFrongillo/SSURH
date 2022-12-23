@@ -1,6 +1,6 @@
 import { Schema, model } from 'mongoose';
 
-const user = new Schema({
+const student = new Schema({
     name:{
         firstName:{
             type: String,
@@ -26,24 +26,16 @@ const user = new Schema({
         required: true
     },
 
-    title:{
+    stuID:{
         type: String,
-        max: 20
+        min: 8
     },
 
-    roomNumber: {
-        type: String, 
-        max: 6,
-    }, 
-
-    linkedIn:{
+    status:{
         type: String,
-    },
-
-    bio:{
-        type: String, 
-        max: 4000
     }
+
+    
 });
 
-export default model('user', user);
+export default model('student', student);
