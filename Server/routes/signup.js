@@ -6,7 +6,7 @@ const bcrypt = require("bcrypt");
 
 //Create a new user
 
-route.post('/signup', async(req,res) =>{
+route.post('/', async(req,res) =>{
 
     const {error} = newUserValidation(req.body);
     console.log(error);

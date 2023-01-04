@@ -1,11 +1,11 @@
-POST http://localhost:3070/signup/signup
+POST http://localhost:3070/signup
 Content-Type: application/json
 
 {
     "firstName": "John",
     "middleName": "E",
     "lastName": "Doe",
-    "email": "j_does@salemstate.edu",
+    "email": "I_does@salemstate.edu",
     "password": "password123",
     "roomNumber": "MH20935",
     "linkedIn": "I love LinkedIn",
