@@ -2,12 +2,16 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 /**
- * Define routes here
+ * Defining backend elements 
  */
+const signup = require('./routes/signup')
+// --------------------------------------
 const dbConnection = require('./db/conn')
+const SERVER_PORT = 3070
+
 
 require('dotenv').config({path: 'config.env'});
-const SERVER_PORT = 3070
+
 
 dbConnection()
 app.use(cors({origin: '*'}));
@@ -15,6 +19,7 @@ app.use(express.json());
 /**
  * Define app.use routes here
  */
+app.use('/signup', signup)
 
 app.listen(SERVER_PORT, (req,res) =>{
     console.log(`Server is running on port: ${SERVER_PORT}`);
