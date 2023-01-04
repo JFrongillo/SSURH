@@ -12,3 +12,17 @@ Content-Type: application/json
     "bio": "I love life!!!!!!!"
 }
 ###
+
+POST http://localhost:3070/signup
+Content-Type: application/json
+{
+    "firstName": "",
+    "middleName": "",
+    "lastName": "",
+    "email": "j_frongillo@salemstate.edu",
+    "password": "LongAFPassword1962",
+    "roomNumber": "",
+    "linkedIn": "",
+    "bio": ""
+}
+###

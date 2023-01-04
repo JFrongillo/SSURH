@@ -2,3 +2,4 @@
 config.env
 /build
 /coverage
+test.rest
