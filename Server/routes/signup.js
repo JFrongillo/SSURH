@@ -15,7 +15,7 @@ route.post('/', async(req,res) =>{
         return res.status(400).send({message: error.errors[0].message});
     }
 
-    const{firstName, middleName, lastName, email, password, roomNumber, linkedIn, bio} = req.body;
+    const{firstName, middleName, lastName, email, password, username, roomNumber, linkedIn, bio} = req.body;
 
     const userLookup = await userSchema.findOne({email: email});
 
@@ -35,6 +35,7 @@ route.post('/', async(req,res) =>{
         },
         email: email,
         password: hashPassword,
+        username: username,
         roomNumber: roomNumber,
         linkedIn: linkedIn,
         bio: bio

@@ -5,6 +5,7 @@ const cors = require("cors");
  * Defining backend elements 
  */
 const signup = require('./routes/signup')
+const profile = require ('./routes/profileView')
 // --------------------------------------
 const dbConnection = require('./db/conn')
 const SERVER_PORT = 3070
@@ -20,6 +21,8 @@ app.use(express.json());
  * Define app.use routes here
  */
 app.use('/signup', signup)
+app.use('/profiles', profile)
+
 
 app.listen(SERVER_PORT, (req,res) =>{
     console.log(`Server is running on port: ${SERVER_PORT}`);

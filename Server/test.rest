@@ -1,17 +1,3 @@
-POST http://localhost:3070/signup
-Content-Type: application/json
-
-{
-    "firstName": "John",
-    "middleName": "E",
-    "lastName": "Doe",
-    "email": "I_does@salemstate.edu",
-    "password": "password123",
-    "roomNumber": "MH20935",
-    "linkedIn": "I love LinkedIn",
-    "bio": "I love life!!!!!!!"
-}
-###
 
 POST http://localhost:3070/signup
 Content-Type: application/json
@@ -19,10 +5,14 @@ Content-Type: application/json
     "firstName": "",
     "middleName": "",
     "lastName": "",
-    "email": "j_frongillo@salemstate.edu",
+    "email": "j_frongillop@salemstate.edu",
     "password": "LongAFPassword1962",
+    "username": "JFrong01",
     "roomNumber": "",
     "linkedIn": "",
     "bio": ""
 }
 ###
+GET http://localhost:3070/profiles/JFrong01
+###
+GET http://localhost:3070/profiles/JFrong0
