@@ -6,7 +6,7 @@ const cors = require("cors");
  */
 const signup = require('./routes/signup')
 const profile = require ('./routes/profileView')
-// --------------------------------------
+// ---------------------------------------------
 const dbConnection = require('./db/conn')
 const SERVER_PORT = 3070
 
