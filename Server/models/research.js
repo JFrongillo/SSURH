@@ -1,4 +1,4 @@
-import { Schema, model } from 'mongoose';
+const mongoose = require("mongoose");
 
 const research = new Schema({
     name:{
