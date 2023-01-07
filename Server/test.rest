@@ -15,4 +15,4 @@ Content-Type: application/json
 ###
 GET http://localhost:3070/profiles/JFrong01
 ###
-GET http://localhost:3070/profiles/JFrong0
+GET http://localhost:3070/profiles/

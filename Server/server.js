@@ -5,7 +5,7 @@ const cors = require("cors");
  * Defining backend elements 
  */
 const signup = require('./routes/signup')
-const profile = require ('./routes/profileView')
+const profile = require ('./routes/profiles')
 // ---------------------------------------------
 const dbConnection = require('./db/conn')
 const SERVER_PORT = 3070

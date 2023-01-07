@@ -33,7 +33,23 @@ const student = new Schema({
 
     status:{
         type: String,
-    }
+    },
+
+    experience:[{
+        current:{
+            type: Boolean,
+        },
+        startDate:{
+            type: String
+        },
+        endDate:{
+            type: String
+        },
+        description:{
+            type: String,
+            max: 40000
+        }
+    }]
 
     
 });
